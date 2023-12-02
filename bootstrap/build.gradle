@@ -45,7 +45,7 @@ application {
 if (os.isWindows()) {
     ext { packageType = ["msi"] }
 } else {
-    ext { packageType = ["deb"] }
+    ext { packageType = ["deb","rpm"] }
 }
 jlink {
     addExtraDependencies("javafx")

@@ -79,7 +79,7 @@ tasks.register("createPortableRelease") {
 
 tasks.register("createReleaseLinux") {
     dependsOn subprojects.jpackage
-    finalizedBy makeLinuxPortable, copyDeb
+    finalizedBy makeLinuxPortable, copyDeb, copyRpm
 }
 
 
